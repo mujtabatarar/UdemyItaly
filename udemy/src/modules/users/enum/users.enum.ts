@@ -1,0 +1,13 @@
+export enum USER_STATUS {
+  INACTIVE = 0,
+  ACTIVE = 1,
+}
+
+export enum EMPLOYMENT_TYPES_ENUM {
+  STUDENT = 1,
+  EMPLOYEE = 2,
+  FREELANCER = 3,
+  UNEMPLOYED = 4,
+  RETIRED = 5,
+  OTHER = 6,
+}
