@@ -56,6 +56,7 @@ export class TeachersService {
           errorMessage.USER_NOT_FOUND,
         );
       }
+      return ResponseData.success(teacher);
     } catch (err) {
       this.logger.error(`findById -> error: ${JSON.stringify(err.message)}`);
       return ResponseData.error(

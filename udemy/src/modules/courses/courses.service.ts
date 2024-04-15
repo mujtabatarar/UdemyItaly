@@ -169,7 +169,7 @@ export class CoursesService {
 
       const responseObject = {
         ...course.toObject(),
-        teacher: teacher,
+        teacher: teacher.data,
         sections: newSections,
         users: users,
       };
