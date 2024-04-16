@@ -13,7 +13,7 @@ export const udemyMicroServiceConfigKafka: KafkaOptions = {
 
   options: {
     client: {
-      clientId: 'chat-ag-service',
+      clientId: 'udemy-ag-service',
       brokers: [...`${appConfig().KafkaHost}`.split(',')],
       connectionTimeout: 3000, // Time in milliseconds to wait for a successful connection. The default value is: 1000.
 
@@ -28,7 +28,7 @@ export const udemyMicroServiceConfigKafka: KafkaOptions = {
       },
     },
     consumer: {
-      groupId: 'chat-consumer-ag',
+      groupId: 'udemy-consumer-ag',
 
       retry: { retries: 30 },
     },

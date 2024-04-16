@@ -43,7 +43,7 @@ export class AdminService implements OnModuleInit {
     options: {
       ...udemyMicroServiceConfigKafka.options,
       consumer: {
-        groupId: 'chat-consumer-admin',
+        groupId: 'udemy-consumer-admin',
       },
     },
   })
@@ -56,7 +56,7 @@ export class AdminService implements OnModuleInit {
   clientUdemyREDIS: ClientProxy;
 
   onModuleInit() {
-    // adminChatPatterns.forEach((pattern) => {
+    // adminudemyPatterns.forEach((pattern) => {
     //   this.clientUdemyKafka.subscribeToResponseOf(pattern);
     // });
   }
