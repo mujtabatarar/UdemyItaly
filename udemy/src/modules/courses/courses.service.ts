@@ -151,9 +151,9 @@ export class CoursesService {
       let userIds = enrollment?.data?.flatMap((row) => row.userId) || [];
 
       const users = await this.userService.findByIds(userIds);
-      let newArray = sections?.data?.forEach((section) => {
-        section.pppp = '121';
-      });
+      // let newArray = sections?.data?.forEach((section) => {
+      //   section.pppp = '121';
+      // });
 
       let newSections: any = [];
       sections?.data?.map((section: any) => {
@@ -169,7 +169,7 @@ export class CoursesService {
 
       const responseObject = {
         ...course.toObject(),
-        teacher: teacher.data,
+        teacher: teacher?.data,
         sections: newSections,
         users: users,
       };
